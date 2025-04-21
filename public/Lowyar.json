@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "Image": "https://randomuser.me/api/portraits/men/11.jpg",
+    "Name": "Barrister Ahsan Rahman",
+    "Available": "Available",
+    "Speciality": "Criminal Law",
+    "Experience": "12+ Years Experience ",
+    "LicenseNumber": "BAR-20231201",
+    "Fee": 120,
+    "Availability": ["Monday", "Wednesday", "Friday"]
+  },
+  {
+    "id": "2",
+    "Image": "https://randomuser.me/api/portraits/women/22.jpg",
+    "Name": "Advocate Nusrat Jahan",
+    "Available": "Available",
+    "Speciality": "Family Law",
+    "Experience": "8+ Years Experience" ,
+    "LicenseNumber": "BAR-20230917",
+    "Fee": 90,
+    "Availability": ["Tuesday", "Thursday", "Saturday"]
+  },
+  {
+    "id": "3",
+    "Image": "https://randomuser.me/api/portraits/men/33.jpg",
+    "Name": "Barrister Kamrul Hasan",
+    "Available": "Available",
+    "Speciality": "Corporate Law",
+    "Experience": "15+ Years Experience ",
+    "LicenseNumber": "BAR-20220812",
+    "Fee": 150,
+    "Availability": ["Monday", "Tuesday", "Friday"]
+  },
+  {
+    "id": "4",
+    "Image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "Name": "Advocate Farhana Akter",
+    "Available": "Available",
+    "Speciality": "Immigration Law",
+    "Experience": "10+ Years Experience ",
+    "LicenseNumber": "BAR-20211103",
+    "Fee": 100,
+    "Availability": ["Wednesday", "Saturday", "Sunday"]
+  },
+  {
+    "id": "5",
+    "Image": "https://randomuser.me/api/portraits/men/55.jpg",
+    "Name": "Advocate Mahfuz Anwar",
+    "Available": "Available",
+    "Speciality": "Intellectual Property Law",
+    "Experience": "18+ Years Experience ",
+    "LicenseNumber": "BAR-20200125",
+    "Fee": 140,
+    "Availability": ["Monday", "Thursday", "Friday"]
+  },
+  {
+    "id": "6",
+    "Image": "https://randomuser.me/api/portraits/women/66.jpg",
+    "Name": "Barrister Tasnim Alam",
+    "Available": "Available",
+    "Speciality": "Environmental Law",
+    "Experience": "7+ Years Experience" ,
+    "LicenseNumber": "BAR-20221119",
+    "Fee": 110,
+    "Availability": ["Tuesday", "Thursday"]
+  },
+  {
+    "id": "7",
+    "Image": "https://randomuser.me/api/portraits/men/77.jpg",
+    "Name": "Advocate Rafiq Chowdhury",
+    "Available": "Available",
+    "Speciality": "Banking Law",
+    "Experience": "9+ Years Experience" ,
+    "LicenseNumber": "BAR-20191209",
+    "Fee": 130,
+    "Availability": ["Monday", "Wednesday"]
+  },
+  {
+    "id": "8",
+    "Image": "https://randomuser.me/api/portraits/women/88.jpg",
+    "Name": "Advocate Sumaiya Rahman",
+    "Available": "Available",
+    "Speciality": "Labor Law",
+    "Experience": "6+ Years Experience" ,
+    "LicenseNumber": "BAR-20210405",
+    "Fee": 95,
+    "Availability": ["Wednesday", "Friday", "Sunday"]
+  },
+  {
+    "id": "9",
+    "Image": "https://randomuser.me/api/portraits/men/99.jpg",
+    "Name": "Barrister Tanvir Alam",
+    "Available": "Available",
+    "Speciality": "Civil Litigation",
+    "Experience": "14+ Years Experience ",
+    "LicenseNumber": "BAR-20180322",
+    "Fee": 125,
+    "Availability": ["Monday", "Thursday", "Saturday"]
+  },
+  {
+    "id": "10",
+    "Image": "https://randomuser.me/api/portraits/women/15.jpg",
+    "Name": "Advocate Laila Siddiqua",
+    "Available": "Available",
+    "Speciality": "Tax Law",
+    "Experience": "11+ Years Experience ",
+    "LicenseNumber": "BAR-20200218",
+    "Fee": 105,
+    "Availability": ["Tuesday", "Friday"]
+  },
+  {
+    "id": "11",
+    "Image": "https://randomuser.me/api/portraits/men/16.jpg",
+    "Name": "Advocate Jahid Hasan",
+    "Available": "Available",
+    "Speciality": "International Law",
+    "Experience": "13+ Years Experience ",
+    "LicenseNumber": "BAR-20170101",
+    "Fee": 160,
+    "Availability": ["Monday", "Wednesday", "Saturday"]
+  },
+  {
+    "id": "12",
+    "Image": "https://randomuser.me/api/portraits/women/17.jpg",
+    "Name": "Barrister Nabila Chowdhury",
+    "Available": "Available",
+    "Speciality": "Real Estate Law",
+    "Experience": "9+ Years Experience" ,
+    "LicenseNumber": "BAR-20210611",
+    "Fee": 115,
+    "Availability": ["Thursday", "Friday", "Sunday"]
+  }
+]
