@@ -50,14 +50,14 @@ const LowyerDetils = () => {
 
 
 
-            <div className="flex lg:flex-row flex-col items-center justify-start gap-4 py-8 px-8 mx-auto w-[95%] mt-7 border-[1px] rounded-2xl">
+            <div className="flex lg:flex-row flex-col items-center justify-start gap-4 py-8 px-8 mx-auto w-[95%] mt-7 border-[1px] rounded-2xl ">
                 <img
                     src={lawyer.Image}
                     className="h-[280px] rounded-lg"
                 />
                 <div className='flex flex-col items-start'>
                     <p className=' text-[#176AE5]  bg-blue-200 px-3 py-1 rounded-full mb-2'>{lawyer.Experience}</p>
-                    <h2 className='text-3xl font-bold py-4'>{lawyer.Name}</h2>
+                    <h2 className='lg:text-3xl text-2xl font-bold py-4'>{lawyer.Name}</h2>
 
                     <div className='flex items-center gap-4 my-4'>
                         <p>Criminal Expert</p>
@@ -70,7 +70,7 @@ const LowyerDetils = () => {
 
                     <div className='flex items-center gap-4 my-2'>
                         <p>Availability:</p>
-                        <p className='flex items-center gap-4'>{lawyer.Availability.map(a => <span className='text-[#FFA000] bg-[#FFA0001A] px-3 py-1 rounded-full'>{a}</span>)}</p>
+                        <p className='flex items-center lg:flex-row flex-col gap-4'>{lawyer.Availability.map(a => <span className='text-[#FFA000] bg-[#FFA0001A] px-3 py-1 rounded-full'>{a}</span>)}</p>
                     </div>
 
                     <p>Consultation Fee:  <span className='text-[#0EA106] font-bold'>Taka:{lawyer.Fee}</span></p>

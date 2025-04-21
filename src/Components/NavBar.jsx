@@ -28,7 +28,7 @@ const NavBar = () => {
                             {nav}
                         </ul>
                     </div>
-                    <a className="flex items-center gap-3"><img src={LOGO} alt="" /> <h2 className='text-3xl font-bold'>Law.BD</h2></a>
+                    <a className="flex items-center gap-3"><img className='lg:w-0 w-[40px]' src={LOGO} alt="" /> <h2 className='lg:text-3xl text-xl font-bold'>Law.BD</h2></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
