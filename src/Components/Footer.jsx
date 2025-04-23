@@ -12,7 +12,7 @@ const Footer = () => {
         <nav>
           <div>
 
-            <ul className='flex items-center justify-center gap-8 my-4 '>
+            <ul className='flex items-center lg:flex-row flex-col justify-center gap-8 my-4 '>
               <li ><NavLink to='/' className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "border-b-2" : ""
               }>Home</NavLink></li>
