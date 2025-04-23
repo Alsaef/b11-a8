@@ -4,6 +4,7 @@ import React, { createContext, useEffect, useState } from 'react';
 export const AppointmentContext = createContext();
 
 const AppointmentProvider  = ({children}) => {
+  
 
     const [appointments, setAppointments] = useState(()=>{
         const storedAppointments = localStorage.getItem("appointments");
@@ -26,7 +27,7 @@ const AppointmentProvider  = ({children}) => {
       };
 
       const removeAppointment = (id) => {
-        const filtered = appointments.filter(item => item.LicenseNumber !== id);
+        const filtered = appointments.filter(item => item.id !== id);
         setAppointments(filtered);
       };
     return (

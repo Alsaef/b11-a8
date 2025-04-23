@@ -8,15 +8,15 @@ import { useInView } from 'react-intersection-observer';
 
 const Service = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false, // 👈 this allows repeated trigger
-    threshold: 0.5,     // when 50% visible
+    triggerOnce: false, 
+    threshold: 0.5,     
   });
 
   const [key, setKey] = React.useState(0);
 
   React.useEffect(() => {
     if (inView) {
-      setKey(prev => prev + 1); // reset CountUp animation by changing key
+      setKey(prev => prev + 1);
     }
   }, [inView]);
 
@@ -32,8 +32,8 @@ const Service = () => {
           <div className='flex items-start'>
             <img src={imag1} alt="Lawyer" />
           </div>
-          <div className="card-body">
-            <h2 className="text-3xl font-bold">
+          <div className="py-3">
+            <h2 className="text-3xl font-bold text-start">
               <CountUp key={key + '-1'} end={199} duration={2} />+
             </h2>
             <p>Total Lawyer</p>
@@ -45,7 +45,7 @@ const Service = () => {
           <div className='flex items-start'>
             <img src={imag2} alt="Review" />
           </div>
-          <div className="card-body">
+          <div className=" py-3">
             <h2 className="text-3xl font-bold">
               <CountUp key={key + '-2'} end={467} duration={2} />+
             </h2>
@@ -58,7 +58,7 @@ const Service = () => {
           <div className='flex items-start'>
             <img src={imag3} alt="Cases" />
           </div>
-          <div className="card-body">
+          <div className=" py-3">
             <h2 className="text-3xl font-bold">
               <CountUp key={key + '-3'} end={1900} duration={3} />+
             </h2>
@@ -71,7 +71,7 @@ const Service = () => {
           <div className='flex items-start'>
             <img src={imag4} alt="Staff" />
           </div>
-          <div className="card-body">
+          <div className=" py-3">
             <h2 className="text-3xl font-bold">
               <CountUp key={key + '-4'} end={300} duration={2} />+
             </h2>

@@ -32,7 +32,7 @@ const LoyarData = ({ lowyers }) => {
                                     <p>{lawyer.Speciality}</p>
                                     <p>{lawyer.LicenseNumber}</p>
                                     <div className="r">
-                                       <Link to={`/lawyer/${lawyer.id}`}> <button className="btn border-blue-400 w-[90%] rounded-full text-blue-400 ">View Details</button></Link>
+                                       <Link to={`/lawyer/${lawyer.LicenseNumber}`}> <button className="btn border-blue-400 w-[90%] rounded-full text-blue-400 ">View Details</button></Link>
                                     </div>
                                 </div>
                             </div>

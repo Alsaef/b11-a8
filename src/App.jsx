@@ -11,7 +11,10 @@ const App = () => {
   const [lowyers, setLowyers] = useState([])
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-    fetch('Lowyar.json')
+    fetch('Lowyar.json', {
+      method: 'GET',
+      cache: 'no-cache'
+    })
       .then(res => res.json())
       .then(data => { setLowyers(data), setLoading(false) })
       .catch(err => console.error('Error fetching data:', err));

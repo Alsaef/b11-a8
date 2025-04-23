@@ -1,16 +1,38 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData, useNavigate } from 'react-router-dom';
+import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { AppointmentContext } from '../Provider/AppointmentProvider ';
-
+import { toast } from 'react-toastify';
 const LowyerDetils = () => {
     const lawyer = useLoaderData()
+    console.log(lawyer);
+    const {id}=useParams()
     const navigate=useNavigate()
     const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
-    const isAvailableToday = lawyer.Availability.includes(today);
+    const isAvailableToday = lawyer?.Availability.includes(today);
 
     const {appointments,addAppointment}=useContext(AppointmentContext)
 
     const [loading, setLoading] = useState(true);
+
+
+
+
+
+
+    if (lawyer==null) {
+        return (
+          <div className="min-h-screen flex flex-col items-center justify-center text-center">
+            <h1 className="text-3xl font-bold text-[#0EA106]">Lawyer Not Found</h1>
+            <p className="text-gray-500 mt-2">The lawyer License Number you provided does not match any record.</p>
+            <p className="text-gray-500 mt-2">{id}</p>
+          <Link to='/'><button className='btn text-white bg-[#0EA106] my-4 rounded-full'>View All Lawers</button></Link>
+          </div>
+        );
+      }
+
+
+
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -30,14 +52,14 @@ const LowyerDetils = () => {
 
         const exists = appointments.find(item => item.id === lawyer.id);
         if (exists) {
-          alert("This lawyer is already booked!");
+            toast.error("This lawyer is already booked!");
           return;
         }
 
          console.log(lawyer);
          addAppointment(lawyer)
          navigate('/booking')
-         alert('Successfully booking')
+         toast('Successfully booking')
     }
     return (
         <div>

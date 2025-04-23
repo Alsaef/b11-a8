@@ -7,6 +7,7 @@ import Root from '../Root/Root';
 import Booking from "../Pages/Booking";
 import Blogs from "../Pages/Blogs";
 import LowyerDetils from "../Pages/LowyerDetils";
+import NotFound from "../Pages/NotFound";
 
   export const router = createBrowserRouter([
     {
@@ -25,8 +26,12 @@ import LowyerDetils from "../Pages/LowyerDetils";
               return fetch('/Lowyar.json')
                 .then(res => res.json())
                 .then(data => {
-                  const found = data.find(item => item.id === params.id);
+                  const found = data.find(item => item.LicenseNumber === params.id);
+                  console.log(params.id);
                   return found || null;
+                }).catch(() => {
+                  // In case the fetch fails
+                  return { error: true };
                 });
             },
             element:<LowyerDetils></LowyerDetils>,
@@ -38,6 +43,10 @@ import LowyerDetils from "../Pages/LowyerDetils";
         {
             path:'/blogs',
             element:<Blogs></Blogs>
+        },
+        {
+          path:'*',
+          element:<NotFound></NotFound>
         }
 
       ]
