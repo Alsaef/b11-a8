@@ -12,7 +12,8 @@ const NavBar = () => {
         <li><NavLink to='/blogs' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "border-b-2" : ""
         }>Blogs</NavLink></li>
-        <li><NavLink to='/contact'>Contact Us</NavLink></li>
+        <li><NavLink to='/contact' className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "border-b-2" : ""}>Contact Us</NavLink></li>
     </>
     return (
         <div>
