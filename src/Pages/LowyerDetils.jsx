@@ -59,7 +59,7 @@ const LowyerDetils = () => {
          console.log(lawyer);
          addAppointment(lawyer)
          navigate('/booking')
-         toast(`${lawyer.Name} Lawyer Successfully booking`)
+         toast(`${lawyer.name} Lawyer Successfully booking`)
     }
     return (
         <div>
