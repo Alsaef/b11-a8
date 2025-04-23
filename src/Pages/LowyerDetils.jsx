@@ -112,7 +112,7 @@ const LowyerDetils = () => {
                 </div>
                 <hr />
                 <p className='flex items-center gap-1 ml-5 my-5 bg-[#FFA0001A] text-[#FFA000]  w-[90%] px-1 py-1 rounded-full'><span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                    <g clip-path="url(#clip0_15_7531)">
+                    <g clipPath="url(#clip0_15_7531)">
                         <path d="M10.5 2.5C16.5 2.5 18 4 18 10C18 16 16.5 17.5 10.5 17.5C4.5 17.5 3 16 3 10C3 4 4.5 2.5 10.5 2.5Z" stroke="#FFA000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M10.5 6.66669V10" stroke="#FFA000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M10.5 13.3333H10.5083" stroke="#FFA000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
