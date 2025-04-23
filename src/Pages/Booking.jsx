@@ -35,7 +35,7 @@ const Booking = () => {
   if (appointments.length===0) {
     return (
       <div className='min-h-screen flex flex-col items-center justify-center'>
-       <h2 className='text-3xl font-bold'>You Have Not Booked Any Appointment Yet!</h2>
+       <h2 className='lg:text-3xl text-xl font-bold text-center'>You Have Not Booked Any Appointment Yet!</h2>
        <Link to='/'><button className='btn bg-blue-500 text-white mt-5 rounded-2xl'>Book An Appointment</button></Link>
       </div>
     )
